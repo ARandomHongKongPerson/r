@@ -6,7 +6,7 @@
       cookie = (c) => {
         var name = c + "=";
         var ca = decodeURIComponent(document.cookie).split(";");
-        for(let i = 0; i<ca.length; i++) {
+        for (let i = 0; i<ca.length; i++) {
           var v = ca[i];
           while (v.charAt(0) == " ") {
             v = v.substring(1);
@@ -23,9 +23,9 @@
   |
   |`
       var hung = cookie("hung");
-      if {!hung} (
+      if (!hung) {
         document.getElementById("hang").innerHTML = default
-      );
+      };
     };
   </script>
   </head>
